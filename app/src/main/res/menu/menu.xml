@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@mipmap/call"
+        android:title="@string/phone"
+        android:id="@+id/phone"/>
+
+    <item
+        android:icon="@mipmap/comment"
+        android:title="@string/chat"
+        android:id="@+id/chat"/>
+
+    <item
+        android:icon="@mipmap/plus"
+        android:title=""
+        android:id="@+id/plus"/>
+
+    <item
+        android:icon="@mipmap/explore"
+        android:title="@string/explore"
+        android:id="@+id/explore"/>
+
+    <item
+        android:icon="@mipmap/wallet"
+        android:title="@string/wallet"
+        android:id="@+id/wallet"/>
+</menu>

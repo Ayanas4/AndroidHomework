@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ivStyle">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:tint">#008080</item>
+    </style>
+
+    <style name="tvStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="MyTabText" parent="Base.Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/black</item>
+        <item name="tabTextAppearance">@style/MyTabText2</item>
+    </style>
+
+    <style name="MyTabText2" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">#323238</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tvInfoStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

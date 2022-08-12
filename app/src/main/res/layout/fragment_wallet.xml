@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/shopcategory_bg">
+
+        <ImageView
+            android:id="@+id/iv_ball"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+            app:layout_constraintEnd_toStartOf="@+id/iv_setting"
+            app:layout_constraintTop_toTopOf="@+id/tv_title"
+            app:tint="@color/white"
+            app:srcCompat="@mipmap/bell" />
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_ball"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_ball"
+            app:tint="@color/white"
+            app:srcCompat="@mipmap/setting" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_username"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_title"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            app:tint="#008080" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/store"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/username_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <LinearLayout
+                android:id="@+id/lay_promote"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_promote"
+                    style="@style/ivStyle"
+                    app:srcCompat="@mipmap/coupon" />
+
+                <TextView
+                    android:id="@+id/tv_promote"
+                    style="@style/tvStyle"
+                    android:text="@string/promote" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_shoppingcart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_shoppingcart"
+                    style="@style/ivStyle"
+                    app:srcCompat="@mipmap/shoppingcart" />
+
+                <TextView
+                    android:id="@+id/tv_shoppingcart"
+                    style="@style/tvStyle"
+                    android:text="@string/shoppingcart" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_store"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_store"
+                    style="@style/ivStyle"
+                    app:srcCompat="@mipmap/store" />
+
+                <TextView
+                    android:id="@+id/tv_store"
+                    style="@style/tvStyle"
+                    android:text="@string/otherstore" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    style="@style/MyTabText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="scrollable" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="7dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                </androidx.viewpager2.widget.ViewPager2>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nvView"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#FFFFFF"
+        android:paddingTop="20dp"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/setting_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

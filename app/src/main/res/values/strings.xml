@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AndroidHomework</string>
+    <string name="login_title">Welcome Back!</string>
+    <string name="sub_title">Login to Continue</string>
+    <string name="create">Create New Account</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="register">REGISTER</string>
+    <string name="registration">Registration</string>
+
+    <string name="phone">PHONE</string>
+    <string name="chat">CHAT</string>
+    <string name="explore">EXPLORE</string>
+    <string name="wallet">WALLET</string>
+    <string name="logout">LOGOUT</string>
+
+    <string name="promote">Promote</string>
+    <string name="shoppingcart">Shopping Cart</string>
+    <string name="otherstore">Other Store</string>
+
+    <string name="store">Store</string>
+
+
+    <string name="interactionrewords">Interaction Rewords</string>
+    <string name="socialrewords">Social Rewords</string>
+    <string name="revenue">Revenue</string>
+    <string name="more">More</string>
+    <string name="expires">Expires in \n120 days</string>
+
+</resources>
